@@ -1,0 +1,24 @@
+Config {       
+     font =  "-*-terminus-bold-*-*-*-*-280-*-*-*-*-*-*"
+   ,  bgColor = "black"
+   ,  fgColor = "grey"
+   , position = Top
+   ,  border = NoBorder
+   , borderColor = "black"
+   , borderWidth = 1
+   ,  iconRoot = "/home/dgn/git/dotfiles/home/.dzen2/icons/"
+   ,   sepChar = "%"
+   ,  alignSep = "}{"
+   , template  = "%StdinReader%}{%memory% <fc=#0033FF>|</fc> %eth0% <fc=#0033FF>|</fc> %date%"
+   , lowerOnStart     =     True    -- send to bottom of window stack on start
+   , hideOnStart      =      False   -- start with window unmapped (hidden)
+   , allDesktops      =      True    -- show on all desktops
+   , overrideRedirect = True    -- set the Override Redirect flag (Xlib)
+   , pickBroadest     =     False   -- choose widest display (multi-monitor)
+   , persistent       =       True    -- enable/disable hiding (True = disabled)
+   , commands  = [ Run Network "eth0" ["-L", "0", "-H", "32", "-l", "green", "--normal", "orange", "--high", "red"] 40,
+                           Run Memory ["-t","Mem: <usedratio>%","-l","green","--normal","organge","--high","red"] 40,
+                           Run Date "%a %b %_d %H:%M" "date" 60,
+                           Run StdinReader
+                 ]
+     }

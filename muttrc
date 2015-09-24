@@ -1,0 +1,35 @@
+set imap_user = 'dustin.neuman@gmail.com'
+set imap_pass = "trixie is a little bixie!" 
+set smtp_url  = 'smtp://dustin.neuman@smtp.gmail.com:587/'
+set smtp_pass = "trixie is a little bixie!"
+set from      = 'dustin.neuman@gmail.com'
+
+set realname  = "Dustin Neuman"
+set folder    = 'imaps://imap.gmail.com:993'
+
+set spoolfile = +INBOX
+set postponed = +[Gmail]/Drafts
+
+set header_cache = /Users/dustinneuman/.mutt/cache/headers
+set message_cachedir = /Users/dustinneuman/.mutt/cache/bodies
+
+set certificate_file = /Users/dustinneuman/.mutt/certificates
+set move = no
+
+set sort = threads
+set sort_aux = last-date-received
+set mail_check=60
+set timeout=15
+set imap_check_subscribed
+
+set edit_hdrs # see headers when editing email
+set include
+set reply_to
+set fast_reply
+set auto_tag
+set delete_untag
+set mark_old = no
+
+set forward_format="Fwd: %s"
+
+

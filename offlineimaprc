@@ -1,0 +1,37 @@
+# DGN-Home Offlineimaprc
+
+[general]
+accounts = Gmail
+maxsyncaccounts = 3
+ui = ttyui
+status_backend = sqlite
+
+
+[Account Gmail]
+localrepository  = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/Maildir
+
+[Repository Remote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = dustin.neuman@gmail.com
+remotepass = trixie is a little bixie! 
+remoteport = 993
+ssl        = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+maxconnections = 1
+realdelete = no
+socktimeout = 90
+autorefresh = 30
+folderfiler = lambda foldername: foldername in ['INBOX',
+                                                '[Gmail].Drafts',
+                                                '[Gmail].Important',
+                                    						'[Mailbox].Important',
+				                                    		'[Mailbox].TODO!',
+				                                     		'[Mailbox].Later',
+					                                    	'[Mailbox].appts',]
+

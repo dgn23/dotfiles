@@ -1,0 +1,4 @@
+! Modular Xdefaults
+!------------------
+! Color Scheme
+#include </home/dgn/.colors/solarized>
