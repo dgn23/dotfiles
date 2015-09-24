@@ -1,7 +1,7 @@
 set imap_user = 'dustin.neuman@gmail.com'
-set imap_pass = "trixie is a little bixie!" 
+set imap_pass = 
 set smtp_url  = 'smtp://dustin.neuman@smtp.gmail.com:587/'
-set smtp_pass = "trixie is a little bixie!"
+set smtp_pass = 
 set from      = 'dustin.neuman@gmail.com'
 
 set realname  = "Dustin Neuman"
